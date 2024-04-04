@@ -1,0 +1,235 @@
+/* UNIVERSAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    min-height: 700px;
+    background: linear-gradient(to left, rgb(78, 78, 213) 40%, rgb(112, 196, 230) 70%);
+    padding-bottom: 30px;
+}
+
+.main>h1 {
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    font-size: 50px;
+    font-family: cursive;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    transform: skewX(-15deg);
+}
+
+section {
+    width: 85%;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+section>div {
+    width: 50%;
+    min-height: 250px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px blue;
+    border-radius: 10px;
+}
+
+section>div>img {
+    width: 50%;
+    height: 250px;
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+}
+
+section>div>div {
+    width: 50%;
+    min-height: 250px;
+    padding: 10px;
+    text-align: center;
+    border-left: 10px solid rgb(39, 39, 213);
+    border-radius: 0px 10px 10px 0px;
+}
+
+section>div>div h2 {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+section>div>div h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(57, 55, 55);
+    margin: 5px 0px 20px 0px;
+    color: gray;
+}
+
+section>div>div p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15x;
+    color: rgb(9, 9, 9);
+    margin-bottom: 20px;
+}
+
+section>div>div>div button {
+    border: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+section>div>div>div button:nth-child(1) {
+    background-color: rgb(42, 42, 122);
+}
+
+section>div>div>div button:nth-child(2) {
+    background-color: rgb(98, 195, 233);
+}
+
+section>div>div>div button:nth-child(3) {
+    background-color: rgb(221, 112, 130);
+}
+
+section>div>div>div button:nth-child(4) {
+    background-color: rgb(70, 70, 234);
+}
+
+@media only screen and (min-width:950px) and (max-width:1262px) {
+    section>div>img {
+        min-height: 367px;
+    }
+
+    section>div>div {
+        min-height: 367px;
+    }
+}
+
+@media only screen and (min-width:1262px) and (max-width:1330px) {
+    section>div>div h3 {
+        margin: 5px 0px 10px 0px;
+    }
+    
+    section>div>div p {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:949px) {
+    section>div {
+        flex-direction: column;
+    }
+
+    section>div>img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    section>div>div {
+        width: 100%;
+        min-height: 250px;
+        border-radius: 0px 0px 10px 10px;
+        border-top: 10px solid rgb(39, 39, 213);
+        border-left: unset;
+    }
+}
+
+@media only screen and (min-width:450px) and (max-width:699px) {
+    section {
+        flex-direction: column;
+    }
+
+    section>div {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    section>div>img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    section>div>div {
+        width: 100%;
+        min-height: 200px;
+        border-radius: 0px 0px 10px 10px;
+        border-top: 10px solid rgb(39, 39, 213);
+        border-left: unset;
+    }
+
+}
+
+
+@media only screen and (min-width:300px) and (max-width:499px) {
+    .main h1 {
+        font-size: 35px;
+        padding: 30px 0px 30px 0px;
+    }
+
+    section {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    section>div {
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    section>div>img {
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    section>div>div {
+        width: 90%;
+        min-height: 50px;
+        border-radius: 10px;
+        border-top: unset;
+        border-left: unset;
+        position: absolute;
+        bottom:15px;
+        background-color: rgba(70, 154, 214, 0.5);
+    }
+
+    section>div>div h3 {
+       color:white;
+       text-shadow: 0px 0px 5px black;
+    }
+
+    section>div>div h2 {
+        color:white;
+        text-shadow: 0px 0px 5px black;
+    }
+
+    section>div>div p {
+        display: none;
+    }
+
+    section>div>div>div button span {
+        display: none;
+    }
+
+    section>div>div>div button {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+}
